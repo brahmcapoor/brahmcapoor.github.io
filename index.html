@@ -1,315 +1,230 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-    
- <head>
-    
-     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/main.css">
+  <head>
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-     
-    <!-- Import JQuery and Materialize -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-     
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Brahm Capoor">
 
+    <title>Brahm Capoor</title>
 
-<body>
-  
-    <!-- Code header -->
-    <div class="parallax-container">
-        <div class="parallax" style="padding-top: 60px">
-            <img src="images/header.png" width:"40%" height: "60%">
-        </div>
-    </div>
-    
-    <!-- About Me -->
-    <div class="section" id="aboutme">
-        <div class="row container">
-            <h4> Hi! I'm Brahm, and I'm a member of Stanford University's class of 2019 </h4>
-            <p class="flow-text">   I was born in India and moved to Singapore at the age of 4, and I lived there until I moved to the U.S. for college. I live my life by a very simple credo: <span style="color:#8c1515;">if something is cool, it's worth doing</span>. Luckily, I find almost everything at least a little cool, so I actively try and do as much as I can. For example, I'm majoring in Symbolic Systems, which is an interdisciplinary field formed at the nexus of Computer Science, Cognitive Psychology, Linguistics and Philosophy and I chose this major because I loved how I could get such varied perspectives on each of these subjects. In the future, I want to work in tech, but hopefully, I'll be able to do so in a way that allows me to leverage my interest in other fields as well. </p>
-            <p class="flow-text"> As a result, I actively try to develop a knowledge base that is broad, as well as deep. I'm eager for any opportunity that allows me to do this, whether it be a research position or in industry. </p>
-        </div>
-    </div>
-    
-    <!-- Projects -->
-    <div class="section teal lighten-4" id="projects">
-        <div class="row container">
-            <h3> Some of the things I've worked on</h3>
-            <p class="flow-text"> Cycle through my projects and click any of the images to be taken to the relevant github repo. Alternatively, <a href="https://github.com/brahmcapoor">visit my github. </a> </p>
-        </div>
-    </div>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <div class="slider">
-        <ul class="slides">
-            <li>
-                <a href="https://github.com/brahmcapoor/mercury" target="_blank">
-                    <img src="images/projects/mercury.png"> 
-                    <div class="caption center-align">
-                        <h3 class="orange-text text-lighten-2">Mercury</h3>
-                        <h5 class="light grey-text text-darken-3">An Emotional Twitter Bot. Powered by Python.</h5>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/brahmcapoor/CS-106BR" target="_blank">
-                    <img src="images/projects/106br.png"> 
-                    <div class="caption left-align">
-                        <h3 class="orange-text text-lighten-2">CS 106BR</h3>
-                        <h5 class="light grey-text text-lighten-3">The website for a summer CS course in <br>Brazil, taught by my friends</h5>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/brahmcapoor/cellular-automata" target="_blank">
-                    <img src="images/projects/automaton.png"> 
-                    <div class="caption right-align">
-                        <h3 class="orange-text text-lighten-2">Cellular Automata</h3>
-                        <h5 class="light grey-text text-lighten-2">A simple exploration</h5>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/brahmcapoor/xkcd-explainer" target="_blank">
-                    <img src="images/projects/xkcd.png"> 
-                    <div class="caption right-align">
-                        <h3 class="orange-text text-lighten-2">xkcd explainer</h3>
-                        <h5 class="light grey-text text-darken-3">The best way to learn</h5>
-                    </div>
-                </a>
-            </li>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Projects</a>
+          </li>
         </ul>
-  </div>
-    
-    <!-- Skills -->
-     <div class="section grey lighten-3" id="skills">
-        <div class="row container">
-            <h2 class="header"> My skills and interests </h2>
-            <ul class="collection hoverable">
-                
-                <li class="collection-item avatar">
-                    <img src=images/skills/python.png class="circle">
-                    <span class="title">Python</span>
-                    <p> Worked on multiple independent projects, from <a href="https://github.com/brahmcapoor/mercury">a twitter bot</a> to <a href="https://github.com/brahmcapoor/cellular-automata">a cellular automaton</a>.
-                        My internship in the summer of 2016 was also heavily Python-dependent. </p>
-                </li>
-                
-                <li class="collection-item avatar">
-                    <img src=images/skills/c.jpg class="circle">
-                    <span class="title">C </span>
-                    <p>  I did Stanford's <a href="http://cs107.stanford.edu">CS 107</a>, a systems class in C. As part of the class, I implemented Vectors and Hashmaps, built a dynamic Memory Allocator and worked with x86-64 Assembly.</p>
-                </li>
-                
-                <li class="collection-item avatar">
-                    <img src=images/skills/ruby.png class="circle">
-                    <span class="title">Ruby</span>
-                    <p> Worked through <a href="http://www.theodinproject.com/">Project Odin</a>, a course for web development. Built various command line tools and programs as well as web apps. 
-                    Familiar with Rails and Sinatra.</p>
-                </li>
-                
-                <li class="collection-item avatar">
-                    <img src=images/skills/webstuff.png class="circle">
-                    <span class="title">HTML, CSS and Javascript</span>
-                    <p>  Worked through <a href="http://www.theodinproject.com/">Project Odin</a> and the Front-End Web Development portion of <a href="http://www.freecodecamp.com">Freecodecamp</a>. 
-                        I've built websites like CS106BR (and this one!). As part of my work with Stanford's <a href="http://hci.stanford.edu/">Human-Computer Interaction group</a>,
-                        I also helped to build <a href="https://github.com/habitlab">HabitLab</a>, a chrome extension that intelligently offers interventions from websites we waste time on
-                        to increase our productivity on the web.</p>
-                </li>
-                
-                <li class="collection-item avatar">
-                    <img src=images/skills/Java.svg class="circle">
-                    <span class="title">Java (Some Familiarity)</span>
-                    <p>  I did Stanford's <a href="http://cs106a.stanford.edu">CS 106A</a>, an introduction to programming course in Java.</p>
-                </li>
-                
-                <li class="collection-item avatar">
-                    <img src=images/skills/c++.jpg class="circle">
-                    <span class="title">C++ (Some Familiarity)</span>
-                    <p>  I did Stanford's <a href="http://cs106b.stanford.edu">CS 106B</a>, a programming course in C++ </p>
-                </li>
-                
-            
-            </ul>
-            
-            <h4 class="header">Other tools and frameworks</h4>
-            <div class="chip hoverable">
-                <img src="images/tools/git.png" alt="git">
-                git
-            </div>
-            
-            <div class="chip hoverable">
-                <img src="images/tools/mercurial.png" alt="git">
-                Mercurial
-            </div>
-            
-            <div class="chip hoverable">
-                <img src="images/tools/commandline.jpeg" alt="Command Line">
-                Command line
-            </div>
-            
-            <div class="chip hoverable">
-                <img src="images/tools/rails.jpg" alt="Ruby On Rails">
-                Ruby On Rails
-            </div>
-            
-            <div class="chip hoverable">
-                <img src="images/tools/sinatra.png" alt="Sinatra">
-                Sinatra
-            </div>
-            
-            <div class="chip hoverable">
-                <img src="images/tools/jquery.png" alt="jQuery">
-                jQuery
-            </div>
-            
-            <div class="chip hoverable">
-                <img src="images/tools/bootstrap.png" alt="Bootstrap">
-                Bootstrap
-            </div>
-            
-            <div class="chip hoverable">
-                <img src="images/tools/materialize.jpg" alt="Materialize">
-                Materialize
-            </div>
-            
-        </div>
-       
-    </div>
-                 
-    <!-- Experience -->
-    <div class="section teal lighten-4" id="experience">
-       <div class="row container">
-            <h2 class="header">Where I've worked</h2>
-            <p class="flow-text"> Click the images for more details. Alternatively, <a href="https://www.linkedin.com/in/brahm-capoor-84474a100" target="_blank">visit my Linkedin</a> or <a href="docs/Brahm%20Capoor.pdf">view my resume.</a></p>
-           <div class="col s4 m4 l4">
-                <div class="card hoverable medium">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/work/198.png">
-                        <span class="card-title"> CS 106</span>
-                    </div>
-                    <div class="card-content">
-                        <p class="flow-text"> Section Leader </p>
-                        <div class="chip">
-                            Teaching
-                        </div>                        
-                    </div>
-                    <div class="card-action">
-                        <a> I'm currently doing this </a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                        <p> I'm a TA for Stanford's introductory Computer Science course sequence, taught in Java and C++. My responsibilities include teaching a section of 8-12 students, grading assignments, holding interactive grading sessions to offer students feedback and advice, and holding office hours. </p>
+      </div>
+    </nav>
 
-                    </div>
-                </div>
-           </div>
-           <div class="col s4 m4 l4">
-                <div class="card hoverable medium">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class = "activator" src="images/work/gates.jpg">
-                        <span class="card-title"> Human-Computer Interaction Group</span>
-                    </div>
-                    <div class="card-content">
-                        <p class="flow-text"> Research Intern </p>
-                        <div class="chip">
-                            Research
-                        </div>
-                        <div class="chip">
-                            Web Development
-                        </div>
-                    </div>
-                    <div class="card-action"> 
-                        <a>September - December 2016</a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                        <p>I worked with a PhD student and Professor Michael Bernstein with their research into behaviour on the internet on HabitLab, a chrome extension that intelligently offers interventions to prevent you from wasting time on the internet. </p>
-                        <p><a href="https://github.com/habitlab/" target="_blank">HabitLab on Github</a></p>
-                    </div>
-                </div>
-           </div>
-           <div class="col s4 m4 l4">
-                <div class="card hoverable medium">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class= "activator" src="images/work/dukenus.jpg">
-                        <span class="card-title"> Center For Cognitive Neuroscience</span>
-                    </div>
-                    <div class="card-content">
-                        <p class="flow-text">Research Assistant </p>
-                        <div class="chip">
-                            Research
-                        </div>                        
-                    </div>
-                    <div class="card-action">
-                        <a> Summer 2016 </a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                        <p>I helped develop, test and run two psychophysics experiments for the Brain & Consciousness Lab in the Center For Cognitive Neuroscience at Duke-NUS Medical School. I worked under the supervision of a PhD student but was largely independent on a day-to-day basis. The experiments will be published in papers late this year. Links to the experiments on github can be found here:</p>
-                        <ul>
-                            <li><a href="https://github.com/brahmcapoor/naming-changes-complexity" target="_blank">Naming Changes Complexity</a></li>
-                            <li><a href="https://github.com/brahmcapoor/relevance-changes-confidence" target="_blank">Relevance Changes Confidence</a></li>
-                        </ul>
-                    </div>
-                </div>
-           </div> 
+    <div class="container-fluid p-0">
+      <img src="img/header.jpg" width=100%>
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Brahm
+            <span class="text-primary">Capoor</span>
+          </h1>
+          <div class="subheading mb-5">Stanford Symbolic Systems '19 · brahm@stanford.edu 
+          </div>
+          <p class="mb-5"> Like a monkey with a typewriter, I occasionally make sense. This website serves as proof of that.</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/brahmcapoor" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.github.com/brahmcapoor" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="doc/Resume.pdf" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-file-text fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="row container">
-            <div class="col s4 m4 l4">
-                <div class="card hoverable medium">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/work/cern.jpg">
-                        <span class="card-title"> European Center for Nuclear Research (CERN)</span>
-                    </div>
-                    <div class="card-content">
-                        <p class="flow-text"> High School Summer Intern </p>
-                        <div class="chip">
-                            Research
-                        </div>                        
-                    </div>
-                    <div class="card-action">
-                        <a> Summer 2014 </a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                        <p> I worked with a team of scientists and engineers to build and test Resistive Plate Chambers, a form of particle detector used to detect Muons. These RPCs were subsequently installed in the Compact Muon Solenoid experiment, a part of the Large Hadron Collider.</p>
+      </section>
 
-                    </div>
-                </div>
-           </div>
-        </div>
-    </div>
-    
-    
-        <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Contact Me</h5>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!"><i class="material-icons left">email</i>brahm@stanford.edu</a></li><br>
-                    <li><span class="grey-text text-lighten-3"><i class="material-icons left">phone</i>(650) 686-8973</span></li> <br>
-                    <li><span class="grey-text text-lighten-3"><i class="material-icons left">mail</i>531 Lasuen Mall, P.O. Box 15690, Stanford, CA 94309</span><li>
-                </ul>
-              </div>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Natural Language Processing Intern</h3>
+              <div class="subheading mb-3">CloudMinds Technologies</div>
+              <p>Working on signal processing for speech recognition, deep learning for language understanding and designing and building a backend system to integrate various TensorFlow models with data collection pipelines.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2017 - September 2017</span>
             </div>
           </div>
-          <div class="footer-copyright">
-            <div class="container">
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">CS106 Section Leader</h3>
+              <div class="subheading mb-3">Department of Computer Science, Stanford University</div>
+              <p>TA (Teaching Assistant) for Stanford’s introductory Computer Science 2-course sequence. Teach a section of 10-12 students, grade homework and exams, hold office hours and interactive grading sessions for students. Courses are in Java and C++. Have given multiple guest lectures and written new assignments for the class, alongside autograders for these assignments. Also helping to train new TAs. Watch one of my lectures <a href="https://drive.google.com/file/d/0By0tWmD5HF8AWU1FQVU3Wmx2SlU/view?usp=sharing" target="_blank">here</a>.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Jan 2017 - Present</span>
             </div>
           </div>
-        </footer>
-    
-</body>
-    
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Research Intern</h3>
+              <div class="subheading mb-3">Stanford Unviersity Human-Computer Interaction Group</div>
+              <p>Worked on the <a href="https://github.com/habitlab/habitlab" target="_blank">HabitLab Google Chrome Extension</a>, which intelligently offers interventions to increase one’s productivity on the web.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2016 - December 2016</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Research Intern</h3>
+              <div class="subheading mb-3">Center for Cognitive Neuroscience, Duke-NUS Medical School, Singapore</div>
+              <p>Assisted with two psychophysics experiments in the Brain & Consciousness Lab. Designed, implemented and tested both experiments (using python and the psychopy package), and ran one of the experiments on test subjects, followed by subsequent data analysis. Both experiments are on my github.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2016 - August 2016</span>
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">High School Intern</h3>
+              <div class="subheading mb-3">European Center for Nuclear Research (CERN)</div>
+              <p>Part of a team of summer students & engineers helping to build and test resistive plate chambers (RPCs), a type of particle detector in the Compact Muon Solenoid (CMS) experiment, a part of the Large Hadron Collider (LHC)..</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2014 - July 2014</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Heroes and Villains: What A.I. Can Tell Us About Movies</h3>
+                <div class="subheading mb-3">Python</div>
+                <p> Final Project for Stanford's CS221: Artificial Intelligence Techniques and Principles. I used various Artificial Intelligence Techniques on Movie Scripts to identify protagonists and antagonists, find factions of characters, and cluster scripts based on their archetype. View the code <a href="https://github.com/brahmcapoor/Heroes-And-Villains" target="_blank">here</a> or read the paper <a href="doc/HeroesAndVillains.pdf" target="_blank">here</a>.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">November 2017</span>
+              </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0">L.A.I.R: Leveraging A.I. For Requests</h3>
+                <div class="subheading mb-3">Python</div>
+              <p> Final Project for Stanford's CS229: Introduction to Machine Learning. I used various Machine Learning Algorithms to predict how long students would need to wait for help at office hours and subsequently, how long it would take a TA to help them. View the code <a href="https://github.com/brahmcapoor/L.A.I.R." target="_blank">here</a> or read the paper <a href="doc/LAIRtimes.pdf" target="_blank">here</a>.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">November 2017</span>
+              </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0">BlueBook</h3>
+                <div class="subheading mb-3">Java, Javascript, React + Redux, Python</div>
+                <p> A suite of tools to allow programming exams to be taken on a computer. Includes frontend application for students to take exams at a specified time, backend infrastrucure for automated exam creation and submission, and a variety of tools (including autograding) to expedite exam grading. The codebase is currently private for security reasons, but will likely eventually be opensourced.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">April 2017 - Present</span>
+              </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0">Heap Allocator</h3>
+                <div class="subheading mb-3">C</div>
+                <p> Final Project for Stanford's CS 107: Computer Organization and Systems. Implements a dynamic memory allocator. Code is private due to Stanford's Honor Code.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">November 2016</span>
+              </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0">Mercury</h3>
+                <div class="subheading mb-3">Python</div>
+                <p> A twitter bot that chooses a random emotion every day and generates tweets based on that mood using Markov Chaining on a corpus of around 2000 quotes per emotion, webscraped from GoodReads. View the code <a href="https://github.com/brahmcapoor/Mercury" target="_blank">here</a> or the (now inactive) bot <a href="https://twitter.com/mercurialbot" target="_blank">here</a>.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">May 2016</span>
+              </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
 </html>
