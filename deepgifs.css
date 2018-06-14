@@ -2,7 +2,7 @@ html, body {
     overflow: auto;
 }
 
-a {
+a, .code {
     font-family: 'Inconsolata', monospace; 
 }
 

@@ -43,7 +43,7 @@
         <img id="architecture" src="img/deepgifs_architecture.png" />
         <div class="text">
              Our model consists of a convolutional encoder and decoder network, an LSTM, and a discriminator network. Our architecture
-            uses four conv-relu-pool layers to encode the seed frame into a latent representation on which the LSTM predicts future frames.
+            uses four <span class="code">conv-relu-pool</span> layers to encode the seed frame into a latent representation on which the LSTM predicts future frames.
             The decoder network converts these predictions back into images and has the inverse architecture of the encoder. The discriminator
             has the same architecture as the encoder with a sigmoid function applied to the final scalar output. It is used to discriminate between
             the generated frames and the original data. This allows our network to generate clearer outputs.
