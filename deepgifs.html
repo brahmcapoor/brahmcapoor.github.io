@@ -1,20 +1,141 @@
-Real GIFs on the left, generated GIFs on the right
-<div style="display: flex">
-    <img style= "margin: 10px" src="img/deepgifs/0_real_ball.gif" /> 
-    <img style= "margin: 10px" src="img/deepgifs/0_fake_ball.gif" />
-</div>
-<br>
-<div style="display: flex">
-    <img style= "margin: 10px" src="img/deepgifs/7_real_ball.gif" />
-    <img style= "margin: 10px" src="img/deepgifs/7_fake_ball.gif" />
-</div>
-<br>
-<div style="display: flex">
-    <img style= "margin: 10px" src="img/deepgifs/3_real_mnist.gif" />
-    <img style= "margin: 10px" src="img/deepgifs/3_fake_mnist.gif" />
-</div>
-<br>
-<div style="display: flex">
-    <img style= "margin: 10px" src="img/deepgifs/9_real_mnist.gif" />
-    <img style= "margin: 10px" src="img/deepgifs/9_fake_mnist.gif" />
-</div>
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DeepGIFs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="deepgifs.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato|Oswald" rel="stylesheet">
+    <!-- <script src="deepgifs.js"></script> -->
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <div class="title"> DeepGIFs: Using Deep Learning to Understand and Synthesize Motion</div>
+            <div class="byline"> <em> Ali Malik, Michael Troute and Brahm Capoor </em></div>
+        </div>
+
+        <div class="links">
+            <a href="doc/deepgifs.pdf"> Read the Paper </a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="https://github.com/malik-ali/DeepGIFs"> View the Code </a>
+        </div>
+
+        <div class="text">
+             Humans are adept at intuiting how objects <em>can</em> and <em>should</em> move. We form this understanding before we form
+            our understanding of the physical mechanisms underpinning motion. Understanding `rules of motion' is central to the task
+            of generating realistic sequences. Frames should plausibly follow from previous frames, and objects should move, deform,
+            and interact realistically. Structuring a video generation task around consistent motion is a challenging task for which
+            deep learning is a well-suited solution and for our <a href="http://cs231n.stanford.edu"> CS 231N</a> final project at Stanford,
+            we did exactly that. 
+        </div>
+
+        <div class="sectiontitle"> Abstract </div>
+        <div class="text">    
+            Recurrent neural networks (RNNs) have seen widespread use across a variety of generative tasks requiring temporality. In this paper we explore the effectiveness of deep recurrent networks in the task of understanding
+            motion. In particular, we propose a modular architecture for inferring realistic motion from still `seed images', based on
+            the recent success of generative adversarial networks. We evaluate this architecture on a variety of synthetic datasets and
+            show that our network is able to successfully learn motion and generate new videos from still images.
+        </div>
+
+        <div class="sectiontitle"> Architecture </div>
+        <img id="architecture" src="img/deepgifs_architecture.png" />
+
+        <div class="sectiontitle"> Results: <span class="highlight"> Bouncing Ball</span> </div>
+        <div class="resultrow">
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_0_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_0_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_1_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_1_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_2_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_2_fake.gif" />
+            </div><div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_3_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_3_fake.gif" />
+            </div>
+        </div>
+        <div class="resultrow">
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_4_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_4_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_5_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_5_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_6_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_6_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_7_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_7_fake.gif" />
+            </div>
+        </div>
+        <div class="resultrow">
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_8_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_8_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/bball_9_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/bball_9_fake.gif" />
+            </div>
+        </div>
+
+        <div class="sectiontitle"> Results: <span class="highlight"> Moving MNIST </span> </div>
+        <div class="resultrow">
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_0_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_0_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_1_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_1_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_2_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_2_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_3_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_3_fake.gif" />
+            </div>
+        </div>
+        <div class="resultrow">
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_4_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_4_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_5_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_5_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_6_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_6_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_7_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_7_fake.gif" />
+            </div>
+        </div>
+        <div class="resultrow">
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_8_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_8_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/deepgifs/mnist_9_real.gif" />
+                <img style="margin: 10px" src="img/deepgifs/mnist_9_fake.gif" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
