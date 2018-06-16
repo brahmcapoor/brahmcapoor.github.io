@@ -2,10 +2,6 @@ html, body {
     overflow: auto;
 }
 
-a, .code {
-    font-family: 'Inconsolata', monospace; 
-}
-
 #content {
     /* height: 100%; */
     width: 75%;
@@ -24,6 +20,10 @@ a, .code {
     width: 80%;
     display: block;
     margin: auto;
+}
+
+.link, .code {
+    font-family: 'Inconsolata', monospace; 
 }
 
 .links {
