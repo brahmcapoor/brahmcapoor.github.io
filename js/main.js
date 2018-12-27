@@ -2,7 +2,7 @@ PROJECT_DETAILS = {
   bluebook: {
     title: "BlueBook: Secure, Electronic Programming Exams",
     summary: `A suite of tools to allow programming exams to be taken on a computer. Includes frontend application for students to
-              take exams, backend infrastrucure for automated exam creation and submission, and a variety of
+              take exams, backend infrastructure for automated exam creation and submission, and a variety of
               tools (including autograding) to expedite exam grading. Used to deliver more than 7000 exams across various Stanford
               courses thus far.`,
     imgsrc: "img/Projects/BlueBook/bb4.gif",
