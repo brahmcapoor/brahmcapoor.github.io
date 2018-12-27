@@ -1,0 +1,235 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+p,
+li {
+  font-family: "Lato", sans-serif;
+  font-size: 14pt;
+  color: #444444;
+}
+
+code {
+  font-family: "Inconsolata", monospace;
+  font-size: 16pt;
+  margin-top: 20px;
+  color: #444444;
+}
+
+#content {
+  width: 60%;
+  margin: auto;
+}
+
+.banner {
+  background: linear-gradient(transparent, #ffffff),
+    url("../img/banner.jpg") no-repeat center;
+  background-size: cover;
+  height: 50%;
+}
+
+.header {
+  text-align: center;
+}
+
+#navbar {
+  margin-top: 30px;
+  margin-bottom: 120px;
+  border-top: 2px solid #888888;
+  border-bottom: 2px solid #888888;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 14px;
+}
+
+.title,
+.subtitle,
+.sectiontitle {
+  font-family: "Oswald", sans-serif;
+}
+
+.title {
+  font-size: 120px;
+  color: #444444;
+}
+
+#profile {
+  border-radius: 50%;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #888888;
+}
+
+.navlink {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+
+#bannerimg {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  min-height: 100vh;
+  position: inline;
+}
+
+.halfsection {
+  min-height: 50vh;
+  position: inline;
+}
+
+.summary,
+.details {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.summarypara {
+  margin-bottom: 0;
+  color: #444444;
+}
+
+.summary:hover {
+  cursor: pointer;
+}
+
+.details {
+  color: #999999;
+  display: none;
+}
+
+.fa-file,
+.fa-linkedin {
+  color: rgb(237, 45, 141);
+}
+
+#explink {
+  color: rgba(237, 45, 141, 0.6);
+}
+
+#explink:hover,
+#experiencetitle,
+.expemph {
+  color: rgb(237, 45, 141);
+}
+
+.expdates {
+  float: right;
+  font-style: italic;
+}
+
+#projlink,
+.fa-github {
+  color: rgb(0, 162, 203, 0.6);
+}
+
+#projlink:hover {
+  color: rgb(0, 162, 203);
+}
+
+#contactlink {
+  color: rgba(247, 180, 0, 0.6);
+}
+
+#contactlink:hover {
+  color: rgb(247, 180, 0);
+}
+
+.sectiontitle {
+  font-size: 60px;
+}
+
+#projtitle {
+  color: rgb(0, 162, 203);
+}
+
+#contacttitle {
+  color: rgb(247, 180, 0);
+}
+
+#projectcontainer {
+  display: flex;
+}
+
+#projectbrowser {
+  width: 35%;
+}
+
+.projectlist {
+  list-style-type: none;
+}
+
+.project {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.project:hover {
+  cursor: pointer;
+  color: rgb(0, 162, 203);
+}
+
+#projectdetails {
+  width: 65%;
+}
+
+#projecttitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  color: rgb(0, 162, 203);
+}
+
+#projectsummary {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  color: #999999;
+}
+
+#projectimage {
+  min-width: 30%;
+  max-width: 80%;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#projecttechs,
+#projectmore {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #999999;
+}
+
+#projectmore > a {
+  text-decoration: none;
+  color: rgb(0, 162, 203);
+}
+
+td {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  padding-left: 40px;
+  color: #444444;
+}
+
+.fa-envelope,
+.fa-calendar-alt {
+  font-size: 100px;
+  color: rgb(247, 180, 0);
+}

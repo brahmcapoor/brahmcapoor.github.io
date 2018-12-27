@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DeepGIFs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="deepgifs.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/deepgifs.css" />
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato|Oswald" rel="stylesheet">
-    <!-- <script src="deepgifs.js"></script> -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="img/x-icon">
 </head>
 <body>
     <div id="content">
@@ -17,7 +18,7 @@
         </div>
 
         <div class="links">
-            <a href="doc/DeepGIFs.pdf" class="link"> Read the Paper </a>
+            <a href="docs/DeepGIFs.pdf" class="link"> Read the Paper </a>
             &nbsp; &nbsp; &nbsp;
             <a href="https://github.com/malik-ali/DeepGIFs" class="link"> View the Code </a>
         </div>
@@ -28,11 +29,11 @@
             of generating realistic sequences. Frames should plausibly follow from previous frames, and objects should move, deform,
             and interact realistically. Structuring a video generation task around consistent motion is a challenging task for which
             deep learning is a well-suited solution and for our <a href="http://cs231n.stanford.edu"> CS 231N</a> final project at Stanford,
-            we did exactly that. 
+            we did exactly that.
         </div>
 
         <div class="sectiontitle"> Abstract </div>
-        <div class="text">    
+        <div class="text">
             Recurrent neural networks (RNNs) have seen widespread use across a variety of generative tasks requiring temporality. In this paper we explore the effectiveness of deep recurrent networks in the task of understanding
             motion. In particular, we propose a modular architecture for inferring realistic motion from still `seed images', based on
             the recent success of generative adversarial networks. We evaluate this architecture on a variety of synthetic datasets and
@@ -40,7 +41,7 @@
         </div>
 
         <div class="sectiontitle"> Architecture </div>
-        <img id="architecture" src="img/deepgifs_architecture.png" />
+        <img id="architecture" src="img/Projects/DeepGIFs/deepgifs_architecture.png" />
         <div class="text">
              Our model consists of a convolutional encoder and decoder network, an LSTM, and a discriminator network. Our architecture
             uses four <span class="code">conv-relu-pool</span> layers to encode the seed frame into a latent representation on which the LSTM predicts future frames.
@@ -50,53 +51,53 @@
         </div>
 
         <div class="sectiontitle"> Results: <span class="highlight"> Bouncing Ball</span> </div>
-        <div class="text"> 
+        <div class="text">
             Each pair of images consists of an actual GIF in our dataset on the left and a generated GIF
-            on the right, produced by taking the first frame of the actual GIF and inputting it to our model. 
+            on the right, produced by taking the first frame of the actual GIF and inputting it to our model.
         </div>
         <div class="resultrow">
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_0_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_0_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_0_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_0_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_1_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_1_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_1_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_1_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_2_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_2_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_2_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_2_fake.gif" />
             </div><div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_3_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_3_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_3_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_3_fake.gif" />
             </div>
         </div>
         <div class="resultrow">
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_4_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_4_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_4_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_4_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_5_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_5_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_5_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_5_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_6_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_6_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_6_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_6_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_7_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_7_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_7_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_7_fake.gif" />
             </div>
         </div>
         <div class="resultrow">
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_8_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_8_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_8_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_8_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/bball_9_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/bball_9_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_9_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/bball_9_fake.gif" />
             </div>
         </div>
 
@@ -107,48 +108,48 @@
         </div>
         <div class="resultrow">
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_0_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_0_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_0_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_0_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_1_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_1_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_1_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_1_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_2_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_2_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_2_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_2_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_3_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_3_fake.gif" />
-            </div>
-        </div>
-        <div class="resultrow">
-            <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_4_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_4_fake.gif" />
-            </div>
-            <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_5_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_5_fake.gif" />
-            </div>
-            <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_6_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_6_fake.gif" />
-            </div>
-            <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_7_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_7_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_3_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_3_fake.gif" />
             </div>
         </div>
         <div class="resultrow">
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_8_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_8_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_4_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_4_fake.gif" />
             </div>
             <div class="resultpair">
-                <img style="margin: 10px" src="img/deepgifs/mnist_9_real.gif" />
-                <img style="margin: 10px" src="img/deepgifs/mnist_9_fake.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_5_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_5_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_6_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_6_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_7_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_7_fake.gif" />
+            </div>
+        </div>
+        <div class="resultrow">
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_8_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_8_fake.gif" />
+            </div>
+            <div class="resultpair">
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_9_real.gif" />
+                <img style="margin: 10px" src="img/Projects/DeepGIFs/mnist_9_fake.gif" />
             </div>
         </div>
     </div>
