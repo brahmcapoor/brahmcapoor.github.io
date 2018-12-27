@@ -148,6 +148,6 @@ function showProjectDetails(project) {
     $("#projectmore").html(project_obj.more);
     $("#projecttechs").html(project_obj.technologies);
     $("#projectimage").attr("src", project_obj.imgsrc);
+    $("#projectdetails").slideDown();
   });
-  $("#projectdetails").slideDown();
 }
