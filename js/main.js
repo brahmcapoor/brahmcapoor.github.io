@@ -60,7 +60,7 @@ PROJECT_DETAILS = {
     title: "L.A.I.R: Leveraging A.I. for Requests",
     summary: `We used various Machine Learning Algorithms to predict how long students would need to wait
               for help at office hours and subsequently, how long it would take a TA to help them.`,
-    imgsrc: "img/Projects/lair.png",
+    imgsrc: "img/Projects/Lair.png",
     more: `Read the paper
            <a href="docs/LAIRtimes.pdf" target="_blank">here</a> or view the code
            <a href="https://github.com/brahmcapoor/L.A.I.R." target="_blank">here</a>.
