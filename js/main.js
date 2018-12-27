@@ -95,6 +95,8 @@ PROJECT_DETAILS = {
 $(document).ready(readyFn);
 
 function readyFn() {
+  preloadImages();
+
   $(".details").each(function() {
     $(this).hide();
   });
@@ -138,16 +140,35 @@ function readyFn() {
   $(".project").click(function(e) {
     showProjectDetails($(this).attr("id"));
   });
+
+  showProjectDetails("bluebook");
+}
+
+function preloadImages() {
+  for (const key of Object.keys(PROJECT_DETAILS)) {
+    let img = $("<img class='projectimage'/>");
+    img.attr("id", key + "_image");
+    img.attr("src", PROJECT_DETAILS[key].imgsrc);
+    $("#projectimages").append(img);
+    img.hide();
+  }
 }
 
 function showProjectDetails(project) {
   $("#projectdetails").slideUp("fast", function() {
     project_obj = PROJECT_DETAILS[project];
+    $(".active").each(function(i) {
+      $(this).removeClass("active");
+    });
+    $("#" + project).addClass("active");
     $("#projecttitle").html(project_obj.title);
     $("#projectsummary").html(project_obj.summary);
     $("#projectmore").html(project_obj.more);
     $("#projecttechs").html(project_obj.technologies);
-    $("#projectimage").attr("src", project_obj.imgsrc);
+    $(".projectimage").each(function(i) {
+      $(this).hide();
+    });
+    $("#" + project + "_image").show();
     $("#projectdetails").slideDown();
   });
 }

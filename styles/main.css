@@ -173,8 +173,7 @@ a {
 }
 
 .project {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .project:hover {
@@ -182,7 +181,20 @@ a {
   color: rgb(0, 162, 203);
 }
 
+.active {
+  background: rgb(0, 162, 203);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+.active:hover {
+  color: white;
+}
+
 #projectdetails {
+  padding-left: 15px;
   width: 65%;
 }
 
@@ -199,7 +211,7 @@ a {
   color: #999999;
 }
 
-#projectimage {
+.projectimage {
   min-width: 30%;
   max-width: 80%;
   display: block;
