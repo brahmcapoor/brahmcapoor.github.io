@@ -25,13 +25,6 @@ code {
   margin: auto;
 }
 
-.banner {
-  background: linear-gradient(transparent, #ffffff),
-    url("../img/banner.jpg") no-repeat center;
-  background-size: cover;
-  height: 50%;
-}
-
 .header {
   text-align: center;
 }

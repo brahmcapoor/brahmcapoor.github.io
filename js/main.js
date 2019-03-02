@@ -92,6 +92,8 @@ PROJECT_DETAILS = {
   }
 };
 
+IMAGE_FILENAMES = ["close", "far", "snow"];
+
 $(document).ready(readyFn);
 
 function readyFn() {
@@ -152,6 +154,18 @@ function preloadImages() {
     $("#projectimages").append(img);
     img.hide();
   }
+
+  const image_filename =
+    IMAGE_FILENAMES[Math.floor(Math.random() * IMAGE_FILENAMES.length)];
+  const bannerimg = $(".banner");
+  bannerimg.css({
+    background:
+      "linear-gradient(transparent, #ffffff),url('img/banners/" +
+      image_filename +
+      ".jpg') no-repeat center",
+    "background-size": "cover",
+    height: "50 %"
+  });
 }
 
 function showProjectDetails(project) {
