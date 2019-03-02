@@ -157,6 +157,7 @@ function preloadImages() {
 
   const image_filename =
     IMAGE_FILENAMES[Math.floor(Math.random() * IMAGE_FILENAMES.length)];
+
   const bannerimg = $(".banner");
   bannerimg.css({
     background:
@@ -164,7 +165,7 @@ function preloadImages() {
       image_filename +
       ".jpg') no-repeat center",
     "background-size": "cover",
-    height: "50 %"
+    "height": "50 %"
   });
 }
 

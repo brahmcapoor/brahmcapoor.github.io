@@ -25,6 +25,11 @@ code {
   margin: auto;
 }
 
+.banner {
+  background-size: "cover";
+  height: 50%;
+}
+
 .header {
   text-align: center;
 }
