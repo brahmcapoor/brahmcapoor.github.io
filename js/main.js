@@ -30,6 +30,22 @@ PROJECT_DETAILS = {
           <a href="https://github.com/brahmcapoor/CS106-teaching-materials/tree/master/CS106A/ContActivist" target="_blank"> here </a>`,
     technologies: "Technologies: Java, HTML/CSS, JavaScript"
   },
+  shahidi: {
+    title: "Shahidi",
+    summary: `Stanford's introductory Computer Science class has a module introducing students to networking and specifically,
+              how server/client programs are implemented. I wrote an assignment (loosely based on
+                <a href="https://www.ushahidi.com/" target="_blank"> Ushahidi </a>) for the class, in which students implemented
+                the servers for a crowdsourced news reporting app. Accompanying this server were various prewritten clients
+                (including a flashy web demo) that made requests to students' servers once they were implemented. The assignment
+                was done by close to 400 students to a very positive reception.`,
+    imgsrc: "img/Projects/Shahidi.png",
+    more: `Created by Brahm Capoor and <a href="https://github.com/pmaldonado" target="_blank">Peter Maldonado</a>
+          using libraries implemented by
+          <a href="https://stanford.edu/~cpiech/" target="_blank">Chris Piech</a>. View the assignment page,
+          including the handout and starter code,
+          <a href="https://web.stanford.edu/class/archive/cs/cs106a/cs106a.1194/assn/shahidi.html", target="_blank">here</a>.`,
+    technologies: "Technologies: Java, HTML/CSS, JavaScript"
+  },
   deepgifs: {
     title: "DeepGIFs: Using Deep Learning to Understand and Synthesize Motion",
     summary: `We explored the potential of deep generative recurrent networks in learning and reproducing
@@ -165,11 +181,12 @@ function preloadImages() {
       image_filename +
       ".jpg') no-repeat center",
     "background-size": "cover",
-    "height": "50 %"
+    height: "50 %"
   });
 }
 
 function showProjectDetails(project) {
+  console.log(project);
   $("#projectdetails").slideUp("fast", function() {
     project_obj = PROJECT_DETAILS[project];
     $(".active").each(function(i) {
