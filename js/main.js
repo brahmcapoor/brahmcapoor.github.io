@@ -3,7 +3,7 @@ PROJECT_DETAILS = {
     title: "BlueBook: Secure, Electronic Programming Exams",
     summary: `A suite of tools to allow programming exams to be taken on a computer. Includes frontend application for students to
               take exams, backend infrastructure for automated exam creation and submission, and a variety of
-              tools (including autograding) to expedite exam grading. Used to deliver more than 7000 exams across various Stanford
+              tools (including autograding) to expedite exam grading. Used to deliver more than 15000 exams across various Stanford
               courses thus far.`,
     imgsrc: "img/Projects/BlueBook/bb4.gif",
     more: `Created by Brahm Capoor,
@@ -105,10 +105,37 @@ PROJECT_DETAILS = {
           <a href="https://twitter.com/mercurialbot" target="_blank">here</a>. Created by Brahm Capoor and
           <a href="https://www.linkedin.com/in/mtroute" target="_blank">Michael Troute</a>`,
     technologies: "Technologies used: Python"
+  },
+  pathways: {
+    title: "Using Latent Variable Models to Observe Academic Pathways",
+    summary: `We proposed a probabilistic approach to modelling course enrollment decisions,
+              drawing inspiration from multilabel classification and mixture models.
+              The models allow for a diverse set of inference
+              queries and robustness to data sparsity. We demonstrate the
+              efficacy of this approach in comparison to others, including
+              deep learning architectures, and demonstrate its ability to
+              infer the underlying student interests that guide enrollment
+              decisions.`,
+    imgsrc: "img/Projects/Pathways.png",
+    more: ` <i>Published in the Proceedings of the 12th International Conference on Educational Data Mining, Montréal, Canada. 2019</i> </br> </br>
+            View the paper
+            <a href="https://arxiv.org/abs/1905.13383" target="_blank">here</a>. <br />
+            Authors: Nate Gruver, Ali Malik, Brahm Capoor, Chris Piech, Mitchell Stevens, Andreas Paepcke`,
+    technologies: ``
+  },
+  autograders: {
+    title: "Python Autograder Framework",
+    summary: `As the Head TA for the pilot python-based introductory computer science course at Stanford University,
+              I wrote a framework for assignment autograders that can be applued to run tests and produce useful output
+              for graders. The autograders support image-based and GUI-based assignments, in addition to console-based
+              programs and also provide easy extensibility and customization. `,
+    imgsrc: "img/Projects/autograder.png",
+    more: `View the code <a href="https://github.com/brahmcapoor/PythonAutograder" target="_blank">here</a>.`,
+    technologies: "Technologies used: Python"
   }
 };
 
-IMAGE_FILENAMES = ["close", "far", "snow"];
+IMAGE_FILENAMES = ["close", "far", "snow", "dolores"];
 
 $(document).ready(readyFn);
 
